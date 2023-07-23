@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 20</title>
+    <style>
+        .container{
+                background-color: beige;
+                border: 5px solid black;
+                margin: 2px;
+                padding: 2px;
+                display: flex;
+                flex-direction: row;
+                 /* This is used to mark the direction of the elements in Flexbox */
+                height: 800px;
+                
+                justify-content: Start; 
+                align-items: Start;
+                
+                /* If both of these properties are marked centre then, the elements will be placed in the exact centre of the felx box. */
+
+                align-content: start;
+                /* This will collapse the space generated between the lines of content when the screens are squzeed. This will fill up that space with the content. */
+
+
+
+                /* flex-direction: row-reverse;
+                This property is used to reverse the direction of the elments inside the flexbox */
+
+                /* similar properties could be used for columns as well */
+
+                /* flex-wrap: wrap; */
+                /* This property will prevent the elments from squeezing until there is not enough space */
+
+                /* flex-wrap: wrap-reverse;
+                This property will start moving the elments in opposite directions when the screen size is squeezed */
+
+
+        }
+        .box{
+            /* height: 200px;
+            width: 200px; */
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+                background-color: aqua;
+                /* order: 500; */
+                /* order property is used to indentify the sequence of the items.  */
+
+                /* flex-shrink: 4; */
+                /* This property will shrink the box with 4X speed. Depends on the number you assign to the shrinking speed */
+
+                /* flex-grow: 5; */
+                align-self: end;
+                
+        }
+        #box2{
+                background-color: blue;
+                /* flex-grow: 1; */
+        }
+        #box3{
+                background-color: orange;
+                /* flex-grow: 1; */
+        }
+        #box4{
+                background-color: brown;
+                /* order:-1; */
+                /* flex-grow: 1; */
+                /* flex-basis: 400px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div>
+    </div>
+</body>
+</html>

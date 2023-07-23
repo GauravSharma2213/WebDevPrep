@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 13: CSS</title>
+    <!-- Here the external CSS file is added above the style tag so the output is based on Internal. If I change the location of this code line to below the style tag then the output will be based on external CSS-->
+
+
+    <link rel="stylesheet" href="style1.css">
+    <!--This is Internal CSS-->
+    <style>
+        h1{
+            color: greenyellow;
+        }
+        p{
+            background-color: bisque;
+        }
+/*        
+        use # before id */
+
+        #article1{
+            background-color: beige;
+        }
+/* 
+        use . before class */
+        .paraclass{
+            background-color: green;
+        }
+
+        p,article {
+            width: 500px;
+        }
+        
+    </style>
+    
+    <!--If you want to change the priority. Put !important at the end of the Internal CSS code and the priority will switch from Inline > Internal, to other way around. -->
+</head>
+<body>
+    <h1>Welcome</h1>
+
+    <!--This is Inline CSS-->
+
+<!-- 
+    example -->
+
+    <article id="article1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi facilis iure veniam labore aliquam ipsum culpa sapiente veritatis? Quas unde quis necessitatibus quam ad rerum ratione, eum similique. Exercitationem veritatis natus magni, officiis delectus et amet quam cumque ipsam qui quod atque suscipit magnam fugit aut, libero necessitatibus neque voluptas.</article>
+
+
+
+    <p style="background-color: aquamarine;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ratione minima fugit facilis sunt laboriosam, debitis amet at porro sed culpa dolores, asperiores cum delectus blanditiis id eos vitae molestias atque reiciendis accusamus non? Ut molestias dicta quae voluptates obcaecati veritatis sed exercitationem, iure deleniti minima placeat, delectus sapiente quod.</p>
+
+    <p class="paraclass">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore voluptate sit nemo amet a fugiat nobis suscipit aperiam quod, hic ipsam. Omnis, corrupti corporis debitis dolores temporibus veniam vitae. Est tempora blanditiis accusamus eaque saepe perferendis inventore consequuntur beatae porro dolorum, dolor vel quod. Suscipit saepe reprehenderit, ipsam molestiae, similique numquam ea error recusandae cum reiciendis aliquid est vel pariatur.</p>
+
+    <p class="paraclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime velit nesciunt expedita ipsam aliquid libero quia impedit fuga. Dolorem magnam adipisci cum quas doloribus at pariatur obcaecati, veniam vel in accusamus facere. Commodi, dolore ut itaque eos corporis optio debitis!</p>
+
+    <footer>Yeh hai Footer</footer>
+
+</body>
+</html>

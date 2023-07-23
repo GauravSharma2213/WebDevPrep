@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture 15</title>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }  
+        
+        /* This is called the Universal selector. This will apply the properties to the whole website. Unless specified, whole website will have 0 margin and padding */
+
+        h1{
+            background-color: aquamarine;
+            /* border-style: solid;
+            border-width: 2px;
+            border-color: brown; */
+            /* border: solid brown 5px; */
+            /* border-radius: 5px; */
+            /* Border radius is used to give rounded style to all the border */
+            /* border-top-left-radius: 5px; */
+            /* by mentioning different sides, you can put border specifically wherever you need. */
+
+            border: solid black 3px;
+            border-radius: 5px;
+            width: 350px;
+            /* height: 200px; */
+
+
+        }
+        .firstpara{
+            background-color: antiquewhite;
+            border: solid black 3px;
+            border-radius: 5px;
+            width: 350px;
+            padding: 10px;
+            margin: 20px;
+
+            /* padding and margin could be added to either side of the content by mentioning */
+
+        }
+        .secondpara{
+            background-color: beige;
+            border: solid black 3px;
+            border-radius: 5px;
+            width: 350px;
+            padding: 15px 25px 35px 45px;
+            /* to add the padding in one notation, just keep on adding the values in the series of Top Right Bottom Left. Check another way below: */
+        }
+
+        .thirdpara{
+            background-color: bisque;
+            border: solid black 3px;
+            border-radius: 5px;
+            width: 350px;
+            padding: 20px 40px;
+             
+            /* If you add only two values for padding that means the first one is in x-axis and second one is in y-axis. */
+        }
+        span{
+            background-color: bisque;
+            border: solid black 3px;
+            border-radius: 5px;
+            width: 350px;
+            height: 200px;
+            /* Why Span tag is not increasing in height or width? */
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Welcome to Lect 15</h1>
+    <span>Welcome to world</span>
+
+    <p class="firstpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam cupiditate aliquam sapiente, dolore repellendus error animi ut sed laudantium, veritatis amet doloribus facere ex eligendi quis sunt deserunt velit. Mollitia numquam corrupti nam omnis, tempora fugit dolorum voluptatum esse!</p>
+
+    <p class="secondpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus mollitia facere ipsam pariatur, incidunt nulla facilis veniam, dolore molestiae eveniet quidem? Fuga qui delectus eum assumenda hic ducimus earum magnam blanditiis facere tempore, velit rerum neque consectetur. Laborum, accusantium. Aliquam magnam delectus vitae eum inventore sed placeat! Harum, fugiat?</p>
+
+    <p class="thirdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore modi, consequatur expedita quis exercitationem incidunt dolore mollitia rerum deleniti fugit ab cum dolorum dolor rem?</p>
+
+</body>
+</html>
